@@ -166,5 +166,70 @@ for name in range(totalnumber+1):
 
 
     print(name)
-    """
+
+#task involving the application of tuples dictionaries and set
+#dict containing student name and the grades in maths bio and chem respectively
+dict={}
+dict={"jack":(20,30,40),"joe":(20,50,60),"isaac":(20,70,80),"kiogora":(20,90,100),"wanjohi":(20,100,200)}
+#task to be continued
+
+import numbers
+
+#program that finds the largest number in a list using parametised functions
+list_of_numbers=(input("enter a list of numbers seperated by commas"))
+list_of_numbers=[int(num) for num in list_of_numbers.split(",")]
+def checking_largest_number(list):
+    biggest_number = list[0]
+    if len(list) == 0:
+        print("no numbers entered")
+        biggest_number="invalid"
+    else:
+        for number in list:
+            if number>biggest_number:
+                biggest_number=number
+    return biggest_number
+largest=checking_largest_number(list_of_numbers)
+print(largest)
+
+#write a program that outputs the repeated elements in a list
+repeated_elements=[]
+count={}
+list=(input("enter a list of elements seperated by commas"))
+list=[elements.lower() for elements in list.split(",")]
+for element in list:
+    if element in count.keys():
+        count[element]+=1
+    else:count[element]=1
+for element,number in count.items():
+    if number>1:
+        repeated_elements.append(element)
+
+print(repeated_elements)
+
+#program that counts easily
+numbers=[1,2,3,4,5,3,2,4,5]
+x=numbers.count(1)
+print(x)
+#program that adds to a tuple
+empty_tuple = (input("enter values in this tuple"))
+print(empty_tuple)
+adding_tuple = (input("enter the values you would like to add to your tuple"))
+new_tuple=empty_tuple+adding_tuple
+print(new_tuple)
+"""
+
+
+
+
+
+#using tuples write a program that adds an item to a list
+#using dicyionaries write a program that deletes a list of keys from a dictionary
+#using dictionaries write a program that checks if a valque exists in a dictionary
+#using dictionaries write a program that converts two lists into a dictionary
+#using sets write a program that adds items to a list
+#using sets write a program that removes items from a list
+
+
+
+
 
